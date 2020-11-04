@@ -68,7 +68,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
         title: Text(todoText),
         trailing: GestureDetector(
             onTap: () => _promptRemoveTodoItem(index),
-            child: Icon(Icons.delete)),
+            child: Icon(
+              Icons.delete,
+              color: Colors.red,
+            )),
       ),
     );
   }
